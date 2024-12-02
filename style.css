@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+}
+
+html,
+body {
+  height: 100%;
+  width: 100;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  /* background-color: lightgreen; */
+}
+
+#header {
+  width: 100%;
+  height: 70px;
+  /* background-color: blueviolet; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  margin: 40px;
+}
+
+.left .cir {
+  height: 25px;
+  width: 25px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.right {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.right h2 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.right h2 span {
+  margin-left: 1.3rem;
+  color: rgb(136, 136, 136);
+}
+
+.header2 {
+  width: 100%;
+  height: 60px;
+  padding-left: 40px;
+  /* background-color: blanchedalmond; */
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.header2 h3 {
+  color: rgb(71, 70, 70);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.hero-container {
+  width: 100%;
+  height: calc(100% - 130px);
+}
+
+.scroll {
+  height: 35%;
+}
+
+.hero-text {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  position: relative;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.hero-text::-webkit-scrollbar {
+  background-color: transparent;
+  height: 6px;
+}
+
+.hero-text::-webkit-scrollbar-thumb {
+  background-color: rgb(249, 122, 76);
+}
+
+.hero-text h1 {
+  flex-shrink: 0;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6.2rem;
+  font-weight: 500;
+}
+
+#t1::before {
+  content: "lookbook";
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgb(77, 76, 76);
+  position: absolute;
+  top: 22%;
+  left: 16.6%;
+}
+
+#t2::before {
+  content: "lookbook";
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgb(77, 76, 76);
+  position: absolute;
+  top: 22%;
+  left: 78.6%;
+}
+
+.img-scroll {
+  height: 65%;
+  width: 100%;
+}
+
+.hero-img {
+  height: 100%;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.hero-img::-webkit-scrollbar {
+  display: none;
+  scroll-behavior: smooth;
+}
+
+.hero-img img {
+  flex-shrink: 0;
+  height: 110%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-img #img2 {
+  height: 200%;
+}
